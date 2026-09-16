@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>DK Digital Growth | SEO Services</title>
+    <title>DK Digital Growth | Professional SEO Services</title>
 
     <meta name="description" content="DK Digital Growth provides professional SEO services including On-Page SEO, Off-Page SEO, Technical SEO, Local SEO and SEO Audits.">
+
+    <meta name="keywords" content="SEO services, SEO expert, SEO consultant, On-Page SEO, Off-Page SEO, Technical SEO, Local SEO, SEO audit">
+
+    <meta name="author" content="DK Digital Growth">
 
     <style>
         * {
@@ -15,130 +19,295 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #222;
-            background: #f5f7fa;
+        html {
+            scroll-behavior: smooth;
         }
 
-        header {
-            background: #111827;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1f2937;
+            background: #f8fafc;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            background: #ffffff;
+            padding: 16px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #374151;
+            margin-left: 20px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        /* HERO */
+
+        .hero {
+            background: linear-gradient(135deg, #111827, #1e3a8a);
             color: white;
             text-align: center;
-            padding: 70px 20px;
+            padding: 100px 20px;
         }
 
-        header h1 {
-            font-size: 42px;
+        .hero h1 {
+            font-size: 48px;
             margin-bottom: 15px;
         }
 
-        header p {
+        .hero h2 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 30px;
             font-size: 18px;
-            margin-bottom: 25px;
+            color: #e5e7eb;
         }
 
         .button {
             display: inline-block;
             background: #2563eb;
             color: white;
-            padding: 12px 22px;
+            padding: 14px 25px;
+            border-radius: 7px;
             text-decoration: none;
-            border-radius: 6px;
             font-weight: bold;
+            margin: 5px;
         }
 
-        nav {
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        .button-outline {
+            background: transparent;
+            border: 1px solid white;
+        }
+
+        .button-outline:hover {
             background: white;
-            padding: 15px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            color: #111827;
         }
 
-        nav a {
-            color: #222;
-            text-decoration: none;
-            margin: 0 12px;
-            font-weight: bold;
-        }
+        /* COMMON SECTION */
 
         section {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: auto;
-            padding: 55px 20px;
+            padding: 70px 20px;
         }
 
-        h2 {
+        .section-title {
             text-align: center;
-            font-size: 30px;
-            margin-bottom: 30px;
+            margin-bottom: 45px;
         }
+
+        .section-title h2 {
+            font-size: 34px;
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .section-title p {
+            color: #6b7280;
+        }
+
+        /* SERVICES */
 
         .services {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
         }
 
         .service {
             background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+            transition: transform 0.2s;
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 35px;
+            margin-bottom: 15px;
         }
 
         .service h3 {
+            color: #111827;
             margin-bottom: 10px;
-            color: #2563eb;
         }
 
-        .about {
+        .service p {
+            color: #6b7280;
+        }
+
+        /* ABOUT */
+
+        .about-box {
             background: white;
-            border-radius: 10px;
-            padding: 30px;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
         }
 
-        .why-us {
-            background: #eef2ff;
+        .about-box p {
+            margin-bottom: 15px;
+            color: #4b5563;
         }
 
-        ul {
-            max-width: 600px;
+        /* SKILLS */
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            max-width: 800px;
             margin: auto;
-            padding-left: 25px;
         }
 
-        li {
-            margin: 10px 0;
+        .skill {
+            background: white;
+            padding: 18px;
+            border-radius: 8px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
         }
 
-        #contact {
+        /* WHY US */
+
+        .why {
+            background: #eef2ff;
+            max-width: none;
+        }
+
+        .why-content {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        .why-list {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .why-list li {
+            list-style: none;
+            background: white;
+            margin: 12px 0;
+            padding: 17px 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+
+        /* CONTACT */
+
+        .contact {
             text-align: center;
         }
+
+        .contact-box {
+            background: white;
+            max-width: 700px;
+            margin: auto;
+            padding: 40px 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+        }
+
+        .contact-box p {
+            margin: 12px 0;
+            color: #4b5563;
+        }
+
+        .contact-link {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
 
         footer {
             background: #111827;
             color: white;
             text-align: center;
-            padding: 25px 15px;
+            padding: 30px 20px;
         }
 
-        @media (max-width: 700px) {
-            header h1 {
-                font-size: 32px;
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            .nav-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero {
+                padding: 75px 20px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
             }
 
             .services {
                 grid-template-columns: 1fr;
             }
 
-            nav a {
-                margin: 0 6px;
-                font-size: 14px;
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            .about-box {
+                padding: 25px;
             }
         }
     </style>
@@ -146,113 +315,271 @@
 
 <body>
 
+    <!-- NAVIGATION -->
+
     <nav>
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <div class="nav-container">
+
+            <div class="logo">
+                DK Digital Growth
+            </div>
+
+            <div>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
     </nav>
 
-    <header id="home">
+
+    <!-- HERO SECTION -->
+
+    <header class="hero" id="home">
+
         <h1>DK Digital Growth</h1>
 
+        <h2>Professional SEO Services</h2>
+
         <p>
-            Professional SEO Services to Grow Your Online Visibility
+            Helping businesses improve their Google visibility,
+            organic traffic and online presence through practical SEO strategies.
         </p>
 
         <a href="#contact" class="button">
             Get Free SEO Consultation
         </a>
+
+        <a href="#services" class="button button-outline">
+            Explore Services
+        </a>
+
     </header>
 
+
+    <!-- SERVICES -->
+
     <section id="services">
-        <h2>Our SEO Services</h2>
+
+        <div class="section-title">
+            <h2>Our SEO Services</h2>
+            <p>
+                SEO solutions designed to improve your website's organic visibility.
+            </p>
+        </div>
 
         <div class="services">
 
             <div class="service">
-                <h3>🔍 On-Page SEO</h3>
+                <div class="service-icon">🔍</div>
+                <h3>On-Page SEO</h3>
                 <p>
-                    Keyword research, meta tags, content optimization
-                    and internal linking.
+                    Keyword research, title tags, meta descriptions,
+                    content optimization, headings and internal linking.
                 </p>
             </div>
 
             <div class="service">
-                <h3>🔗 Off-Page SEO</h3>
+                <div class="service-icon">🔗</div>
+                <h3>Off-Page SEO</h3>
                 <p>
-                    Link building, outreach and authority building.
+                    Link building, outreach and authority-building
+                    strategies to strengthen your website.
                 </p>
             </div>
 
             <div class="service">
-                <h3>⚙️ Technical SEO</h3>
+                <div class="service-icon">⚙️</div>
+                <h3>Technical SEO</h3>
                 <p>
-                    Technical audits, indexing, crawling and
-                    website performance.
+                    Website crawling, indexing, technical audits,
+                    site structure and performance optimization.
                 </p>
             </div>
 
             <div class="service">
-                <h3>📍 Local SEO</h3>
+                <div class="service-icon">📍</div>
+                <h3>Local SEO</h3>
                 <p>
-                    Improve your visibility in local search results.
+                    Improve your local search visibility and help
+                    customers find your business online.
                 </p>
             </div>
 
             <div class="service">
-                <h3>📊 SEO Audit</h3>
+                <div class="service-icon">📊</div>
+                <h3>SEO Audit</h3>
                 <p>
-                    Find SEO issues and get practical recommendations.
+                    Identify SEO issues and receive practical
+                    recommendations for improvement.
+                </p>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">🚀</div>
+                <h3>SEO Strategy</h3>
+                <p>
+                    Customized SEO strategies focused on sustainable
+                    organic growth and better search visibility.
                 </p>
             </div>
 
         </div>
+
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
 
-        <div class="about">
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <div class="section-title">
+            <h2>About Me</h2>
+            <p>SEO experience focused on practical results.</p>
+        </div>
+
+        <div class="about-box">
+
             <p>
                 I am an SEO professional with 1 year of experience
                 in SEO and digital marketing.
             </p>
 
-            <br>
-
             <p>
-                I focus on improving website visibility through
+                I work on improving website visibility through
                 practical and sustainable SEO strategies.
             </p>
+
+            <p>
+                My areas of interest include On-Page SEO, Off-Page SEO,
+                Technical SEO, Local SEO, Keyword Research and SEO Audits.
+            </p>
+
         </div>
+
     </section>
 
-    <section class="why-us">
-        <h2>Why Choose DK Digital Growth?</h2>
 
-        <ul>
-            <li>SEO-focused approach</li>
-            <li>Customized SEO strategies</li>
-            <li>Regular progress reporting</li>
-            <li>Focus on sustainable organic growth</li>
-        </ul>
+    <!-- SKILLS -->
+
+    <section>
+
+        <div class="section-title">
+            <h2>SEO Skills</h2>
+            <p>Key areas I work with.</p>
+        </div>
+
+        <div class="skills">
+
+            <div class="skill">✅ Keyword Research</div>
+            <div class="skill">✅ On-Page Optimization</div>
+            <div class="skill">✅ Off-Page SEO</div>
+            <div class="skill">✅ Link Building</div>
+            <div class="skill">✅ Technical SEO</div>
+            <div class="skill">✅ Local SEO</div>
+            <div class="skill">✅ SEO Audits</div>
+            <div class="skill">✅ Content Optimization</div>
+
+        </div>
+
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
 
-        <p>Want to improve your website's SEO?</p>
+    <!-- WHY CHOOSE US -->
 
-        <br>
+    <div class="why">
 
-        <p>
-            Email: your@email.com
-        </p>
+        <div class="why-content">
+
+            <div class="section-title">
+                <h2>Why Choose DK Digital Growth?</h2>
+                <p>A simple and practical approach to SEO.</p>
+            </div>
+
+            <ul class="why-list">
+
+                <li>🎯 SEO-focused approach</li>
+
+                <li>📋 Customized SEO strategies</li>
+
+                <li>📈 Focus on organic growth</li>
+
+                <li>🔎 Practical SEO recommendations</li>
+
+                <li>📊 Regular progress reporting</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact">
+
+        <div class="section-title">
+            <h2>Let's Grow Your Website</h2>
+
+            <p>
+                Want to improve your website's SEO and online visibility?
+            </p>
+        </div>
+
+        <div class="contact-box">
+
+            <p>
+                📧 Email:
+                <a class="contact-link"
+                   href="mailto:your@email.com">
+                    your@email.com
+                </a>
+            </p>
+
+            <p>
+                💼 LinkedIn:
+                <a class="contact-link"
+                   href="https://www.linkedin.com/in/devendra-kumar-a7296a375"
+                   target="_blank">
+                    View My LinkedIn
+                </a>
+            </p>
+
+            <p>
+                📱 WhatsApp:
+                <a class="contact-link"
+                   href="https://wa.me/91XXXXXXXXXX"
+                   target="_blank">
+                    Chat on WhatsApp
+                </a>
+            </p>
+
+            <br>
+
+            <a href="mailto:your@email.com" class="button">
+                Contact Me
+            </a>
+
+        </div>
+
     </section>
+
+
+    <!-- FOOTER -->
 
     <footer>
-        <p>© 2026 DK Digital Growth. All Rights Reserved.</p>
+
+        <p>
+            © 2026 DK Digital Growth. All Rights Reserved.
+        </p>
+
+        <p>
+            Professional SEO Services
+        </p>
+
     </footer>
 
 </body>
