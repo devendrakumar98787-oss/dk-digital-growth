@@ -80,39 +80,29 @@ body {
 }
 /* NAVBAR */
 
-nav {
-    background: white;
-    padding: 16px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
+<nav class="navbar">
+  <div class="nav-container">
 
-.nav-container {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    <a href="#home" class="logo">DK Digital Growth</a>
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #2563eb;
-}
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open Menu">
+      ☰
+    </button>
 
-nav a {
-    text-decoration: none;
-    color: #374151;
-    margin-left: 18px;
-    font-weight: bold;
-}
+    <div class="nav-links" id="navLinks">
+      <a href="#home" onclick="closeMenu()">Home</a>
+      <a href="#services" onclick="closeMenu()">Services</a>
+      <a href="#pricing" onclick="closeMenu()">Pricing</a>
+      <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+      <a href="#blog" onclick="closeMenu()">Blog</a>
+      <a href="#about" onclick="closeMenu()">About</a>
+      <a href="#faq" onclick="closeMenu()">FAQ</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </div>
 
-nav a:hover {
-    color: #2563eb;
-}
+  </div>
+</nav>
+
 
 /* HERO */
 
