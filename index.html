@@ -18,7 +18,15 @@
 html {
     scroll-behavior: smooth;
 }
+<script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
 
+function closeMenu() {
+  document.getElementById("navLinks").classList.remove("active");
+}
+</script>
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
