@@ -49,6 +49,61 @@ body {
 
 @media (max-width: 768px) {
     .menu-toggle {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DK Digital Growth | SEO Services</title>
+
+<meta name="description" content="DK Digital Growth provides professional SEO services including On-Page SEO, Off-Page SEO, Technical SEO, Local SEO and SEO Audits.">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f8fafc;
+}
+
+/* NAVBAR */
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
         display: block;
     }
 
@@ -71,33 +126,55 @@ body {
     .nav-links a {
         padding: 10px;
     }
+
 }
+
 </style>
 
+</head>
+
+<body>
+
 <nav class="navbar">
+
     <div class="nav-container">
 
-        <a href="#home" class="logo">DK Digital Growth</a>
+        <a href="#home" class="logo">
+            DK Digital Growth
+        </a>
 
-        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open Menu">
+        <button class="menu-toggle"
+                onclick="toggleMenu()"
+                aria-label="Open Menu">
             ☰
         </button>
 
         <div class="nav-links" id="navLinks">
+
             <a href="#home" onclick="closeMenu()">Home</a>
+
             <a href="#services" onclick="closeMenu()">Services</a>
+
             <a href="#pricing" onclick="closeMenu()">Pricing</a>
+
             <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+
             <a href="#blog" onclick="closeMenu()">Blog</a>
+
             <a href="#about" onclick="closeMenu()">About</a>
+
             <a href="#faq" onclick="closeMenu()">FAQ</a>
+
             <a href="#contact" onclick="closeMenu()">Contact</a>
+
         </div>
 
     </div>
+
 </nav>
 
 <script>
+
 function toggleMenu() {
     document.getElementById("navLinks").classList.toggle("active");
 }
@@ -105,6 +182,7 @@ function toggleMenu() {
 function closeMenu() {
     document.getElementById("navLinks").classList.remove("active");
 }
+
 </script>
 
 /* HERO */
