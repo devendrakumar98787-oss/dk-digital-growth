@@ -18,97 +18,94 @@
 html {
     scroll-behavior: smooth;
 }
-<script>
-function toggleMenu() {
-  document.getElementById("navLinks").classList.toggle("active");
-}
 
-function closeMenu() {
-  document.getElementById("navLinks").classList.remove("active");
-}
-    function toggleMenu() {
-  document.getElementById("navLinks").classList.toggle("active");
-}
-
-function closeMenu() {
-  document.getElementById("navLinks").classList.remove("active");
-    }
-</script>
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #1f2937;
     background: #f8fafc;
 }
+
+/* NAVBAR */
 .nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 28px;
-  cursor: pointer;
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
 }
 
 .nav-links {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
+    .menu-toggle {
+        display: block;
+    }
 
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    flex-direction: column;
-    padding: 20px 0;
-    background: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  }
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px 0;
+        background: white;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
 
-  .nav-links.active {
-    display: flex;
-  }
+    .nav-links.active {
+        display: flex;
+    }
 
-  .nav-links a {
-    padding: 10px;
-  }
+    .nav-links a {
+        padding: 10px;
+    }
 }
-/* NAVBAR */
+</style>
+
 <nav class="navbar">
-  <div class="nav-container">
+    <div class="nav-container">
 
-    <a href="#home" class="logo">DK Digital Growth</a>
+        <a href="#home" class="logo">DK Digital Growth</a>
 
-    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open Menu">
-      ☰
-    </button>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open Menu">
+            ☰
+        </button>
 
-    <div class="nav-links" id="navLinks">
-      <a href="#home" onclick="closeMenu()">Home</a>
-      <a href="#services" onclick="closeMenu()">Services</a>
-      <a href="#pricing" onclick="closeMenu()">Pricing</a>
-      <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
-      <a href="#blog" onclick="closeMenu()">Blog</a>
-      <a href="#about" onclick="closeMenu()">About</a>
-      <a href="#faq" onclick="closeMenu()">FAQ</a>
-      <a href="#contact" onclick="closeMenu()">Contact</a>
+        <div class="nav-links" id="navLinks">
+            <a href="#home" onclick="closeMenu()">Home</a>
+            <a href="#services" onclick="closeMenu()">Services</a>
+            <a href="#pricing" onclick="closeMenu()">Pricing</a>
+            <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+            <a href="#blog" onclick="closeMenu()">Blog</a>
+            <a href="#about" onclick="closeMenu()">About</a>
+            <a href="#faq" onclick="closeMenu()">FAQ</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+        </div>
+
     </div>
-
-  </div>
 </nav>
 
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+
+function closeMenu() {
+    document.getElementById("navLinks").classList.remove("active");
+}
+</script>
 
 /* HERO */
 
